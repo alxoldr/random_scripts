@@ -32,7 +32,7 @@ def create_tsv_from_cell_type(cell_type, root_df, write_path):
 
 def main():
 	print('Kicking off the cell splitter - be patient, this might take a while...')
-	if len(sys.argv) != 3:
+	if len(sys.argv) < 3:
 		raise Exception("Invalid number of arguments, please pass the following arguments: <input_file_path> <output_folder_path>")
 	read_path=str(sys.argv[1])
 	write_path=str(sys.argv[2])
